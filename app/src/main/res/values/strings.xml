@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Phayl Fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="d_rsl_rinizd_olan_yenilikl_ri_yr_nm_k_v_davam_etm_k_n_daxil_olun">Dərslərinizdə olan yenilikləri öyrənmək və davam etmək üçün daxil olun.</string>
+    <string name="xo_g_lmisiniz">Xoş gəlmisiniz!</string>
+    <string name="or_text">Və ya bununla daxil ol</string>
+</resources>
