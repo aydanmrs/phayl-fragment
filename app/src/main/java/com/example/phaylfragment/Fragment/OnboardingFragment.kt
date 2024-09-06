@@ -34,7 +34,7 @@ class OnboardingFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
-            requireActivity().finishAffinity()
+            requireActivity().finishAffinity() // Uygulamayı kapatır
         }
 
 
@@ -42,19 +42,23 @@ class OnboardingFragment : Fragment() {
             OnboardingItem(
                 title = "Bütün dərslərinizi bir mərkəzdən izləyin",
                 description = "Dərslərinizi asanlıqla idarə edin, elanlar və resurslarla aktual qalın.",
-                button = "Növbəti"
+                button = "Növbəti",
+                imageResId = R.drawable.mobile // Resim kaynak ID'si
             ),
             OnboardingItem(
                 title = "Davamiyyət izləmənizi sadələşdirin",
                 description = "İnteqrasiya edilmiş təqvimimizlə davamiyyətinizi asanlıqla izləyin və cədvəlinizdən xəbərdar olun.",
-                button = "Növbəti"
+                button = "Növbəti",
+                imageResId = R.drawable.mobile // Resim kaynak ID'si
             ),
             OnboardingItem(
                 title = "Yeniliklərdən vaxtında xəbərdar olun",
                 description = "Tapşırıqlar, testlər, elanlar və digər vacib yeniləmələr üçün dərhal bildirişlər alın.",
-                button = "Başla"
+                button = "Başla",
+                imageResId = R.drawable.mobile // Resim kaynak ID'si
             )
         )
+
 
         binding.skip.setOnClickListener {
             findNavController().navigate(R.id.action_onboardingFragment_to_loginFragment)

@@ -22,6 +22,7 @@ class OnboardingItemsAdapter(private val onboardingItems: List<OnboardingItem>) 
         holder.binding.textTitle.text = item.title
         holder.binding.textDescription.text = item.description
         holder.binding.button.text = item.button
+        holder.binding.imageView.setImageResource(item.imageResId) // Resmi ayarlayın
     }
-}
 
+}
